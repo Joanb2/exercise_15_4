@@ -26,9 +26,10 @@ console.log(average(1, 3, 6, 6));
 
 //4
 
-let grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
+const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
+let [first, ...rest] = grades;
 
-console.log(average(grades));
+console.log(average(first, ...rest));
 
 
 //5

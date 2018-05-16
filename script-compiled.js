@@ -1,5 +1,7 @@
 "use strict";
 
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
 //1
 var hello = "Hello";
 var world = "World!";
@@ -37,8 +39,11 @@ console.log(average(1, 3, 6, 6));
 //4
 
 var grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
+var first = grades[0],
+    rest = grades.slice(1);
 
-console.log(average(grades));
+
+console.log(average.apply(undefined, [first].concat(_toConsumableArray(rest))));
 
 //5
 
