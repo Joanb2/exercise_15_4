@@ -14,7 +14,7 @@ console.log(multiply(5));
 
 //3
 
-let average = (...numbers) => numbers.reduce((sum, next) => sum + next) / numbers.length;
+let average = (...numbers) => numbers.reduce((sum, next) => sum + next, 0 ) / numbers.length;
 
 console.log(average(2, 6, 2, 2));
 console.log(average(1));

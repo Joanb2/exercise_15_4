@@ -29,7 +29,7 @@ var average = function average() {
 
   return numbers.reduce(function (sum, next) {
     return sum + next;
-  }) / numbers.length;
+  }, 0) / numbers.length;
 };
 
 console.log(average(2, 6, 2, 2));
